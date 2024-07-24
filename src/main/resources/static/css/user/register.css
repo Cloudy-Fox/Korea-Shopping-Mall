@@ -1,0 +1,172 @@
+@import "../public/public.css";
+
+
+main{
+    width: 600px;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-orange);
+}
+
+h2{
+    margin: 10px 0;
+    font-size: var(--font-size-xx-large);
+    color: var(--color-strong);
+}
+
+h2#option-headline{
+    margin: 20px 0 10px;
+}
+
+#register-info-section{
+    font-size: var(--font-size-large);
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+#register-info-section > div{
+    display: flex;
+    margin: 8px 0;
+    align-items: center;
+}
+
+#register-info-section label{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+#register-info-section input{
+    flex: 1;
+    width: 100%;
+    font-size: var(--font-size-large);
+    padding: 5px 10px;
+}
+
+#register-info-section select{
+    flex: 1;
+    font-size: var(--font-size-large);
+}
+
+#register-info-section i {
+    display: inline-block;
+    width: 30px;
+}
+#register-info-section i:last-child{
+    text-align: right;
+    cursor: pointer;
+}
+
+/**********************************/
+#email-input-div span{
+    margin: 0 5px;
+}
+#email-input-addr{
+    flex-basis: 100px;
+}
+#email-input-addr{
+    flex-basis: 100px;
+}
+#email-input-domain-auto{
+    margin-left: 10px;
+    align-self: stretch;
+}
+#email-input-domain-auto > select{
+    padding: 2px 5px;
+    height: 100%;
+}
+
+/***********************/
+#phone-input-div > span{
+    margin: 0 5px;
+}
+#phone-input-head{
+    align-self: stretch;
+}
+#phone-input-head > select{
+    padding: 2px 5px;
+    height: 100%;
+    text-align: center;
+}
+#phone-input-div input{
+    text-align: center;
+}
+/*************************************/
+#certification-input > span{
+    margin-right: 10px;
+}
+#certification-btn{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: var(--font-size-large);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-orange);
+    cursor: pointer;
+}
+#certification-btn:disabled{
+    background-color: var(--color-darkest-brown);
+    color: white;
+}
+#certification-btn:not(:disabled):hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+/****************************************/
+#name-input > span{
+    width: 100px;
+}
+#nick-name-input > span{
+    width: 100px;
+}
+#profile-input > span{
+    width: 100px;
+}
+
+/***********************************************/
+#login-btn-section{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#login-btn-section > button{
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-size-xx-large);
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#login-btn-section > button:hover{
+    opacity: 0.8;
+}
+
+#login-btn-section > button:first-child{
+    background-color: var(--color-main);
+}
+
+#login-btn-section > button:last-child{
+    background-color: var(--color-weak-gray);
+}
+
+input[type=file]::before{
+    border: 1px solid black;
+    background-color: #23618e;
+}
+
+
+
+
+
+
+

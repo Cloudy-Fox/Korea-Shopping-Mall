@@ -1,0 +1,150 @@
+@import "../public/public.css";
+
+main{
+    margin: 136px auto;
+    --faq-main-padding: 0 20%;
+}
+
+main li{
+    display: list-item;
+    list-style: decimal;
+}
+
+
+
+.faq-title{
+    background-color: #F9F5D1;
+    padding: var(--faq-main-padding);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: var(--font-size-xx-large);
+    background-image: url("https://static.oliveyoung.co.kr/pc-static-root/image/top/bg_customer_top.png");
+}
+.faq-title > h1{
+    display: inline-block;
+}
+.faq-title > span{
+    font-size: var(--font-size-medium);
+}
+
+article{
+    width: 60%;
+    min-width: 1000px;
+    margin: 25px auto;
+}
+
+.question-view-container{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+}
+
+.question-info{
+    display: flex;
+    padding: 12px 0;
+    align-items: center;
+    font-size: var(--font-size-large);
+    border-bottom: 1px solid black;
+}
+.question-info > b{
+    width: 150px;
+}
+
+.question-section > .question{
+    font-size: var(--font-size-large);
+    /*min-height: 100px;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 4px;*/
+    margin: 10px 0 40px 0;
+    padding: 10px;
+}
+
+.answer-section{
+    margin: 10px 0;
+    padding: 10px;
+    /*border: 1px solid black;*/
+    border-radius: 2px;
+    background-color: var(--color-main);
+}
+.answer-info-container{
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.answer-info-container b{
+    padding-right: 10px;
+    margin-right: 5px;
+    border-right: 1px solid black;
+}
+
+div.answer{
+    margin: 20px 0;
+}
+
+.answer{
+    font-size: var(--font-size-medium);
+}
+
+.answer-files{
+    padding: 0 20px;
+}
+
+.answer-files-container{
+    margin: 10px 0;
+}
+
+.answer-files-container > b{
+    display: block;
+    margin: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+textarea.answer{
+    display: block;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none;
+}
+
+
+/*********************************************************/
+
+.btn-container{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-container > button{
+    padding: 10px 20px;
+    font-size: var(--font-size-x-large);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-sunflower-yellow);
+}
+
+.btn-container > button:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

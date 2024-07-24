@@ -1,0 +1,44 @@
+@import "../public/public.css";
+
+main{
+    --faq-main-padding: 0 20%;
+}
+
+#faq-board-section{
+    padding: var(--faq-main-padding);
+    font-size: var(--font-size-medium);
+
+}
+#faq-board-section ul{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#faq-board-section li{
+    display: block;
+    background-color: var(--color-main);
+    cursor: pointer;
+}
+#faq-board-section .board-item{
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-x-large);
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+}
+#faq-board-section .board-item > .no{
+    width: 50px;
+}
+#faq-board-section .board-item > .title{
+    flex: 1;
+}
+
+#faq-board-section .board-detail{
+    border-bottom: 1px solid black;
+    padding: 30px 50px;
+}
+#faq-board-section p {
+    display: none;
+}
+#faq-board-section p[active] {
+    display: block;
+}

@@ -1,0 +1,129 @@
+main{
+    width: 500px;
+    margin: 200px auto;
+    padding: 80px 0;
+}
+
+h1{
+    margin: 20px 0;
+    text-align: center;
+    color: var(--color-strong);
+}
+
+/********************************/
+#login-info-section{
+    border: 1px solid var(--color-weak-gray);
+    border-radius: 5px;
+}
+#login-info-section > label{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: var(--font-size-medium);
+}
+#login-info-section > label:first-child{
+    border-bottom: 1px solid var(--color-weak-gray);
+}
+
+#login-info-section input{
+    flex: 1;
+    font-size: var(--font-size-medium);
+    border: none;
+    outline: none;
+}
+
+#login-info-section > label > i:first-child{
+    margin-right: 10px;
+}
+#login-info-section > label > i:last-child{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/****************************************/
+#login-id-remember-section{
+    margin: 10px 0;
+}
+#login-id-remember-section > label{
+    display: flex;
+    align-items: center;
+}
+#login-id-remember-section > input{
+    font-size: var(--font-size-small);
+}
+#login-id-remember-section span{
+    font-size: var(--font-size-small);
+    margin-left: 5px;
+    color: rgba(0,0,0,0.6);
+}
+/************************/
+#login-btn{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: var(--font-size-large);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-strong);
+    cursor: pointer;
+}
+#login-btn:hover{
+    opacity: 0.8;
+}
+/*******************************/
+#nav-section{
+    margin: 5px 0 15px 0;
+    text-align: center;
+}
+#nav-section a{
+    margin: 0 5px;
+    color: rgba(0,0,0,0.5);
+    font-size: var(--font-size-small);
+}
+#nav-section a:hover{
+    opacity: 0.8;
+}
+
+
+
+/*******************************/
+#simple-login-section{
+    margin-top: 45px;
+    text-align: center;
+}
+#simple-login-section h4{
+    margin: 20px;
+    font-size: var(--font-size-medium);
+}
+#simple-login-section a{
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    padding: 0 15px;
+    border-right: 1px solid var(--color-weak-gray);
+}
+#simple-login-section a:nth-child(3){
+    width: 80px;
+}
+#simple-login-section a:last-child{
+    border: none;
+}
+
+#simple-login-section img{
+    width: 100%;
+}
+#simple-login-section img:hover{
+    opacity: 0.8;
+}
+/******************************/
+
+
+
+
+
+
+
+
+
+
+

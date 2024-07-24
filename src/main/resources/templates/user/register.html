@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../../static/css/public/public.css" th:href="@{/css/public/public.css}">
+    <link rel="stylesheet" href="../../static/css/user/register.css" th:href="@{/css/user/register.css}">
+
+    <script src="https://kit.fontawesome.com/d19fdaba43.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.iamport.kr/v1/iamport.js"></script>
+    <script src="../../static/js/user/register.js" th:src="@{/js/user/register.js}" defer></script>
+
+</head>
+<body>
+    <main>
+        <h1>KOREA MARKET 회원가입</h1>
+        <h3 th:if="${param.isNotRegisted}">조회된 유저 정보가 없습니다. 회원가입부터 진행해주세요</h3>
+        <form action="/user/register" method="post" enctype="multipart/form-data">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+            <section id="register-info-section">
+                <h2>필수정보</h2>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <label id="id-input">
+                        <input type="text" name="id" placeholder="아이디 입력 (4-10자, 영/숫자 조합)">
+                    </label>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-key"></i>
+                    <label id="password-input">
+                        <input type="password" name="password" placeholder="패스워드 (4-15자, 영/숫자/특수문자 조합)">
+                    </label>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-key"></i>
+                    <label id="password-re-input">
+                        <input type="password">
+                    </label>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+
+                <div id="email-input-div">
+                    <input type="hidden" name="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <label id="email-input-addr">
+                        <input type="text">
+                    </label>
+                    <span>@</span>
+                    <label id="email-input-domain-manual">
+                        <input type="text">
+                    </label>
+                    <label id="email-input-domain-auto">
+                        <select>
+                            <option>직접입력</option>
+                            <option>naver.com</option>
+                            <option>google.com</option>
+                            <option>nate.com</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="phone-input-div">
+                    <input type="hidden" name="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <label id="phone-input-head">
+                        <select>
+                            <option selected>010</option>
+                            <option>011</option>
+                            <option>017</option>
+                        </select>
+                    </label>
+                    <span>-</span>
+                    <label id="phone-input-middle">
+                        <input type="text">
+                    </label>
+                    <span>-</span>
+                    <label id="phone-input-tail">
+                        <input type="text">
+                    </label>
+                </div>
+
+                <div>
+                    <input type="hidden" id="imp-uid" name="impUid">
+                    <button type="button" id="certification-btn">본인인증하기</button>
+                </div>
+                <div th:if="${certErrorMsg}" th:text="${certErrorMsg}"></div>
+
+                <h2 id="option-headline">선택정보</h2>
+
+                <div>
+                    <i class="fa-solid fa-signature"></i>
+                    <label id="name-input">
+                        <span>이름</span>
+                        <input type="text">
+                    </label>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-signature"></i>
+                    <label id="nick-name-input">
+                        <span>닉네임</span>
+                        <input type="text">
+                    </label>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-image"></i>
+                    <label id="profile-input">
+                        <span>프로필사진</span>
+                        <input type="file" name="profileImg" value="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MDlfNjMg%2FMDAxNzE1MjMzNTEyNTA2.-F-Tuq92UOUwjraSiyMoK62FARLYzGGovYRq9sFWbHEg.q98Cn9VWRo-noZVOSux_IEkDmHvVxfZW2Cg103giBWQg.JPEG%2FR_%25282%2529.jpg&type=sc960_832">
+                    </label>
+                </div>
+            </section>
+
+            <section id="login-btn-section">
+                <button type="button">회원가입</button>
+                <button type="button">취소</button>
+            </section>
+
+
+        </form>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+

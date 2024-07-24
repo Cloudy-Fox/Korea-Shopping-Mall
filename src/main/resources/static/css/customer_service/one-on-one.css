@@ -1,0 +1,88 @@
+@import "../public/public.css";
+
+main{
+    --faq-main-padding: 0 20%;
+}
+
+#faq-board-section{
+    padding: var(--faq-main-padding);
+    font-size: var(--font-size-medium);
+}
+
+#faq-board-section > table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+#faq-board-section th{
+    background-color: var(--color-orange);
+}
+#faq-board-section th, #faq-board-section td{
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+#faq-board-section colgroup > .no{
+    width: 8%;
+}
+#faq-board-section colgroup > .title{
+    text-align: left;
+}
+#faq-board-section colgroup > .write-date{
+    width: 10%;
+}
+#faq-board-section colgroup > .writer{
+    width: 10%;
+}
+#faq-board-section colgroup > .view-count{
+    width: 8%;
+}
+#faq-board-section colgroup > .is-opened{
+    width: 8%;
+}
+#faq-board-section colgroup > .is-answered{
+    width: 8%;
+}
+
+
+#faq-board-section > div{
+    margin: 10px 0;
+    text-align: right;
+}
+#faq-write-btn{
+    padding: 5px 5px;
+    font-size: var(--font-size-medium);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-medium-gray);
+    color: white;
+    cursor: pointer;
+}
+#faq-write-btn:hover{
+    opacity: 0.8;
+}
+/********************************************/
+nav.pagination-nav{
+    padding: 10px 0;
+}
+nav.pagination-nav .pagination{
+    display: flex;
+    justify-content: center;
+}
+nav.pagination-nav li{
+    display: inline-flex;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-weak-gray);
+    border-radius: 6px;
+    cursor: pointer;
+}
+nav.pagination-nav li[active]{
+    border: 2px solid black;
+}
+nav.pagination-nav a{
+    font-size: var(--font-size-medium);
+}
+
